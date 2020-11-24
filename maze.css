@@ -1,0 +1,49 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.tile{
+    display: flex;
+    height: 20px;
+    width: 20px;
+}
+
+.divLine{
+    display: flex;
+}
+.path{
+    height: 20px;
+    width: 20px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.wall{
+    height: 20px;
+    width: 20px;
+    background-color: grey;
+    text-align: center;
+}
+
+.starting{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    text-align: center;
+}
+
+.treasure{
+    height: 20px;
+    width: 20px;
+    background-color:rgb(17, 190, 243);
+    text-align: center;
+}
+.hero{
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+}
