@@ -17,6 +17,26 @@ const multiline = `***********.*
 *.******...**
 *....********`
 
+/*const multiline = `**********************
+*..S.................*
+********************.*
+*....................*
+*.********************
+*...................T*` */
+
+/*const multiline = `********
+****S***
+****.***
+****.***
+****.***
+*......*
+*.****.*
+*..***.*
+*..***.*
+**.*****
+*T.*****
+********´*/
+
 //separe la multiligne en ligne
 const lineArray = multiline.split("\n");
 
@@ -34,6 +54,7 @@ for(let i=0; i<= lineArray.length-1; i++){
         characterDiv.innerHTML = character[j];
         characterDiv.classList.add("tile");
         divLine.appendChild(characterDiv);
+        
         //donner un nom de classe pour chaque symbole
         if (characterDiv.innerHTML === "*"){
         characterDiv.classList.add("wall");
@@ -66,7 +87,7 @@ document.querySelector("#\\31 > div.starting").appendChild(hero);
 
 function winner(){
     if(document.querySelector("#\\3" + y + "> div:nth-child("+ x +")").classList.contains("treasure")){
-        alert("HEYY, you are out of the maze !")
+        alert("HEYY, you are out of the maze and you are find your lover!")
     }
 }
 
