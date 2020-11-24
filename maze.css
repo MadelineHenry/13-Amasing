@@ -15,8 +15,11 @@ main{
 .path{
     height: 20px;
     width: 20px;
-    background-color: lightgreen;
-    text-align: center;
+    background-color: #E1E1E1;
+	background-image: url(img/g.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
 }
 
 .wall{

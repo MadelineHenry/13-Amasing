@@ -17,6 +17,19 @@ const multiline = `***********.*
 *.******...**
 *....********`
 
+/*const multiline = `********
+****S***
+****.***
+****.***
+****.***
+*......*
+*.****.*
+*..***.*
+*..***.*
+**.*****
+*T.*****
+********`*/
+
 //separe la multiligne en ligne
 const lineArray = multiline.split("\n");
 
@@ -56,8 +69,12 @@ for(let i=0; i<= lineArray.length-1; i++){
 document.querySelector("#\\31  > div.starting");
 }
 
-let x= 2;
+/*let x= 0;
+let y= 0;*/
+let x= 5;
 let y= 1;
+
+/*x = x + document.querySelector("#\\31  > div.starting")*/
 
 let hero = document.createElement("div");
 hero.classList.add("hero");
