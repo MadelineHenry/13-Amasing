@@ -22,8 +22,11 @@ main{
 .wall{
     height: 20px;
     width: 20px;
-    background-color: grey;
-    text-align: center;
+    background-color: #E1E1E1;
+	background-image: url(img/champ.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
 }
 
 .starting{

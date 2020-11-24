@@ -52,6 +52,55 @@ for(let i=0; i<= lineArray.length-1; i++){
         characterDiv.innerHTML = "";
         }
     main.appendChild(divLine);
+    }
+document.querySelector("#\\31  > div.starting");
+}
 
+let x= 2;
+let y= 1;
+
+let hero = document.createElement("div");
+hero.classList.add("hero");
+
+document.querySelector("#\\31 > div.starting").appendChild(hero);
+
+function winner(){
+    if(document.querySelector("#\\3" + y + "> div:nth-child("+ x +")").classList.contains("treasure")){
+        alert("HEYY, you are out of the maze !")
     }
 }
+
+function move(e){
+    if(e.code == "ArrowRight"){
+        x++;
+        if(document.querySelector("#\\3" + y + "> div:nth-child("+ x +")").classList.contains("wall")){
+        alert("STOP, you cannot go through walls!");
+        x--;
+        }
+    }
+    else if(e.code == "ArrowLeft"){
+        x--;
+        if(document.querySelector("#\\3" + y + "> div:nth-child("+ x +")").classList.contains("wall")){
+        alert("STOP, you cannot go through walls!");
+        x++;
+        }
+    }
+    else if(e.code == "ArrowUp"){
+        y--;
+        if(document.querySelector("#\\3" + y + "> div:nth-child("+ x +")").classList.contains("wall")){
+        alert("STOP, you cannot go through walls!");
+        y++;
+        }
+    }
+    else if(e.code == "ArrowDown"){
+        y++;
+        if(document.querySelector("#\\3" + y + "> div:nth-child("+ x +")").classList.contains("wall")){
+        alert("STOP, you cannot go through walls!");
+        y--;
+        }
+    }
+    document.querySelector("#\\3" + y + "> div:nth-child("+ x +")").appendChild(hero);
+    winner()
+}
+
+document.addEventListener("keydown", move);
