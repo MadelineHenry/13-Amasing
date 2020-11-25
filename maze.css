@@ -1,55 +1,62 @@
+body{
+    background-color: #ccd897;
+}
+
 main{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .tile{
     display: flex;
-    height: 20px;
-    width: 20px;
+    height: 80px;
+    width: 80px;
 }
 
 .divLine{
     display: flex;
 }
 .path{
-    height: 20px;
-    width: 20px;
+    height: 80px;
+    width: 80px;
     background-color: #E1E1E1;
-	background-image: url(img/g.jpg);
+	background-image: url(img/paves.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
 }
 
 .wall{
-    height: 20px;
-    width: 20px;
+    height: 80px;
+    width: 80px;
     background-color: #E1E1E1;
 	background-image: url(img/champ.jpg);
+	background-position: left;
+	background-size: cover;
+}
+
+.hero{
+    height: 80px;
+    width: 80px;
+    background-color: #E1E1E1;
+    background-image: url(img/girl.jpg);
+	background-position: left;
+	background-size: cover;
+}
+.starting{
+    background-image: url(img/paves.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
 }
 
-.starting{
-    height: 20px;
-    width: 20px;
-    background-color: blue;
-    text-align: center;
-}
-
 .treasure{
-    height: 20px;
-    width: 20px;
-    background-color:rgb(17, 190, 243);
-    text-align: center;
-}
-.hero{
-    height: 16px;
-    width: 16px;
-    margin: 2px;
-    border-radius: 50%;
-    background-color: red;
-    text-align: center;
+    height: 80px;
+    width: 80px;
+    background-color: #E1E1E1;
+    background-image: url(img/gars.jpg);
+	background-position: left;
+	background-size: cover;
 }
