@@ -19,7 +19,7 @@ const level1 =`*************
 *************`
 
 const level2 =`**********************
-*..S.................*
+*S...................*
 ********************.*
 *....................*
 *.********************
@@ -27,7 +27,7 @@ const level2 =`**********************
 **********************`
 
 const level3 =`********
-****S***
+*S...***
 ****.***
 ****.***
 ****.***
@@ -40,7 +40,7 @@ const level3 =`********
 ********`
 
 const level4 = `********************
-S.*****............T
+*S*****............T
 *.*****.************
 *...***......*******
 ***...*...**.....***
@@ -78,9 +78,12 @@ const creatMaze = maze =>{
                 tile.className += " path";
 
                 if (character === "S"){
+                    const starting = document.createElement("div");
+                    starting.className = "starting"
                     const hero = document.createElement("div");
                     hero.className = "hero";
                     tile.appendChild(hero);
+                    tile.appendChild(starting);
                     x = i % character.length;
                     y = j;
                     console.log(x, y);

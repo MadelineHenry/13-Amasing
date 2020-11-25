@@ -37,15 +37,19 @@ main{
 	background-size: cover;
 }
 
-.starting{
+.hero{
     height: 80px;
     width: 80px;
     background-color: #E1E1E1;
-	background-image: url(img/paves.jpg);
+    background-image: url(img/girl.jpg);
+	background-position: left;
+	background-size: cover;
+}
+.starting{
+    background-image: url(img/paves.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
-    background-size: cover;
-    opacity: 10%;
+	background-size: cover;
 }
 
 .treasure{
@@ -57,11 +61,4 @@ main{
 	background-size: cover;
 }
 
-.hero{
-    height: 80px;
-    width: 80px;
-    background-color: #E1E1E1;
-    background-image: url(img/girl.jpg);
-	background-position: left;
-	background-size: cover;
-}
+
