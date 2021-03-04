@@ -62,7 +62,7 @@ Do your best to surpass yourself! The goal is to make a project correct, but do 
 :muscle: :punch: :trophy:
 
 ## Visual
-[Wase](https://madelinehenry.github.io/13-amazeing/.)
+[Github Page](https://madelinehenry.github.io/13-Amazeing/)
 
 ![image](https://github.com/madelinehenry/13-amazeing/blob/main//img/maze.png)
  
